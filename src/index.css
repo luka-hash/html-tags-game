@@ -1,0 +1,25 @@
+:root {
+    font-family: "Adwaita Sans", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --text-color: rgba(0, 0, 0, 1);
+    --bg-color: rgba(255, 255, 255, 1);
+    --border-color: rgba(180,180,180,1);
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+a {
+    text-decoration: underline;
+}
