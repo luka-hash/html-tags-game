@@ -30,15 +30,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set up Node
-        uses: actions/setup-node@v4
+      - name: Set up Bun
+        uses: actions/setup-bun@v4
         with:
-          node-version: 20
-          cache: 'npm'
+          node-version: 1.2.5
+          cache: 'bun'
       - name: Install dependencies
-        run: npm ci
+        run: bun install
       - name: Build
-        run: npm run build
+        run: bun run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
