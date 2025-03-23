@@ -1,0 +1,572 @@
+[
+  {
+    "tag_name": "<a>",
+    "description": "Hyperlinks to URI accessible documents",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<abbr>",
+    "description": "Abbreviation or acronym",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<address>",
+    "description": "Contact information",
+    "category": "Content sectioning"
+  },
+  {
+    "tag_name": "<area>",
+    "description": "Defines a clickable area in an image map. Used only within a <map> element",
+    "category": "Image and multimedia"
+  },
+  {
+    "tag_name": "<article>",
+    "description": "Self-contained composition in a document, page, application, or site",
+    "category": "Content sectioning"
+  },
+  {
+    "tag_name": "<aside>",
+    "description": "Portion of the page that is tangentially related to the main content. Typically presented as a sidebar",
+    "category": "Content sectioning"
+  },
+  {
+    "tag_name": "<audio>",
+    "description": "Embeds audio into document",
+    "category": "Image and multimedia"
+  },
+  {
+    "tag_name": "<b>",
+    "description": "Represents text that should be stylistically offset from normal text without conveying extra importance. While historically used for bold text, it has legitimate semantic uses like keywords, product names, or other text that should be stylistically different. When emphasis or importance is needed, use <strong> instead",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<base>",
+    "description": "Base url to use for all relative urls in the document. Only one per document. Mostly used in template files to reduce boilerplate",
+    "category": "Document metadata"
+  },
+  {
+    "tag_name": "<bdi>",
+    "description": "Used to isolate a part of text that might be formatted in a different direction from other text outside it",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<bdo>",
+    "description": "Used to override the current text direction",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<blockquote>",
+    "description": "Quotation. URL for the source of the quotation may be given with the cite attribute (usually not rendered, but can be used by search engines), while the text representation of the source can be given using the <cite> element",
+    "category": "Text content"
+  },
+  {
+    "tag_name": "<body>",
+    "description": "The content of an HTML document. One per document",
+    "category": "Sectioning root"
+  },
+  {
+    "tag_name": "<br>",
+    "description": "Significant line break",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<button>",
+    "description": "Defines a button that can be clicked to submit a form or perform an action",
+    "category": "Forms"
+  },
+  {
+    "tag_name": "<canvas>",
+    "description": "For canvas drawing using canvas scripting API or the WebGL API",
+    "category": "Scripting"
+  },
+  {
+    "tag_name": "<caption>",
+    "description": "Table caption. Usually rendered below the table",
+    "category": "Table content"
+  },
+  {
+    "tag_name": "<cite>",
+    "description": "Represents a reference to a creative work (citation). Mostly semantic usage but is also usually rendered as italic text",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<code>",
+    "description": "Represents a fragment of computer code. Rendered as monospace font, like <pre> but inline",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<col>",
+    "description": "Defines one or more columns in a column group. Only valid within a <colgroup>",
+    "category": "Table content"
+  },
+  {
+    "tag_name": "<colgroup>",
+    "description": "Defines a group of columns within a table",
+    "category": "Table content"
+  },
+  {
+    "tag_name": "<data>",
+    "description": "Links a given piece of content with a machine-readable form of the content. Used where two versions of the content are available, one for humans and one for machines",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<datalist>",
+    "description": "Defines a list of pre-defined <option>s that represent the permissable or recommended options available to choose from within other controls (e.g. <input>)",
+    "category": "Forms"
+  },
+  {
+    "tag_name": "<dd>",
+    "description": "Description definition. Each <dd> element can have multiple relevant <dt> elements (think of synonyms)",
+    "category": "Text content"
+  },
+  {
+    "tag_name": "<del>",
+    "description": "Represents that the content has been deleted. Usually rendered with a line through it and a red-ish background colour",
+    "category": "Demarcating edits"
+  },
+  {
+    "tag_name": "<details>",
+    "description": "Represents a disclosure widget from which the user can obtain additional information or controls. Usually rendered as a button or link that expands or collapses the details element. A summary must be provided using the <summary> element",
+    "category": "Interactive elements"
+  },
+  {
+    "tag_name": "<dfn>",
+    "description": "Used to define a term (mostly semantic)",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<dialog>",
+    "description": "Represents a dialog box or window. Usually rendered as a modal or popup window",
+    "category": "Interactive elements"
+  },
+  {
+    "tag_name": "<div>",
+    "description": "Generic container for flow content",
+    "category": "Text content"
+  },
+  {
+    "tag_name": "<dl>",
+    "description": "Description list. Glossary, dictionary, or similar data in key-value 'format'. Items (dt, dd pairs) might be grouped in a <div> element",
+    "category": "Text content"
+  },
+  {
+    "tag_name": "<dt>",
+    "description": "Description term. Each <dt> element can have multiple relevant <dd> elements (think a word with multiple meanings)",
+    "category": "Text content"
+  },
+  {
+    "tag_name": "<em>",
+    "description": "Emphasis. Typically rendered using an italic font style. Since both <i> and <em> are rendered the same way, they are often confused with each other; these days you'll mostly see <em> used",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<embed>",
+    "description": "Same as object; if you need to embed something use object",
+    "category": "Embedded content"
+  },
+  {
+    "tag_name": "<fieldset>",
+    "description": "Used to group related form elements (like radio buttons or checkboxes)",
+    "category": "Forms"
+  },
+  {
+    "tag_name": "<figcaption>",
+    "description": "Caption for a figure. Think of image caption",
+    "category": "Text content"
+  },
+  {
+    "tag_name": "<figure>",
+    "description": "Figure with optional caption. Figure is a self-contained illustration, diagram, photo, code snippet, etc. i.e. self-contained unit of content",
+    "category": "Text content"
+  },
+  {
+    "tag_name": "<footer>",
+    "description": "Footer content: author's info, copyright, contact info, etc.",
+    "category": "Content sectioning"
+  },
+  {
+    "tag_name": "<form>",
+    "description": "Defines a document section that contains interactive controls for submitting information to a server",
+    "category": "Forms"
+  },
+  {
+    "tag_name": "<h1>",
+    "description": "Heading level 1 (most important)",
+    "category": "Content sectioning"
+  },
+  {
+    "tag_name": "<h2>",
+    "description": "Heading level 2",
+    "category": "Content sectioning"
+  },
+  {
+    "tag_name": "<h3>",
+    "description": "Heading level 3",
+    "category": "Content sectioning"
+  },
+  {
+    "tag_name": "<h4>",
+    "description": "Heading level 4",
+    "category": "Content sectioning"
+  },
+  {
+    "tag_name": "<h5>",
+    "description": "Heading level 5",
+    "category": "Content sectioning"
+  },
+  {
+    "tag_name": "<h6>",
+    "description": "Heading level 6 (least important)",
+    "category": "Content sectioning"
+  },
+  {
+    "tag_name": "<head>",
+    "description": "Contains the metadata of the document: links, title, scripts, stuff like that",
+    "category": "Document metadata"
+  },
+  {
+    "tag_name": "<header>",
+    "description": "Introductory content. Typically a group of introductory or navigational aids. It usually might contain nav, search, etc.",
+    "category": "Content sectioning"
+  },
+  {
+    "tag_name": "<hgroup>",
+    "description": "Heading grouped with any secondary content, such as subheadings, alt title or a tagline",
+    "category": "Content sectioning"
+  },
+  {
+    "tag_name": "<hr>",
+    "description": "Horizontal rule. Thematic break",
+    "category": "Text content"
+  },
+  {
+    "tag_name": "<html>",
+    "description": "The root; top-level element. Also referred to as the root element",
+    "category": "Main root"
+  },
+  {
+    "tag_name": "<i>",
+    "description": "Historically presented as italic text, but this element is used to mark text that is set off from the normal text for some reason (alternative voice or mood, taxonomic designation, foreign idiomatic terms or expressions, technical terms, transliterations, thoughts, etc.)",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<iframe>",
+    "description": "Nested browsing context - embedding another HTML document into the current one",
+    "category": "Embedded content"
+  },
+  {
+    "tag_name": "<img>",
+    "description": "Embeds image into document",
+    "category": "Image and multimedia"
+  },
+  {
+    "tag_name": "<input>",
+    "description": "Defines an input field where users can enter data. A wide variety of input types are available, including text, email, password, radio buttons, checkboxes, etc.",
+    "category": "Forms"
+  },
+  {
+    "tag_name": "<ins>",
+    "description": "Represents that the content has been inserted. Usually rendered with a green-ish background colour",
+    "category": "Demarcating edits"
+  },
+  {
+    "tag_name": "<kbd>",
+    "description": "Used to differentiate keyboard input from other text (e.g. <kbd>Ctrl</kbd> + <kbd>C</kbd>)",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<label>",
+    "description": "Caption for an item in a user interface (or in a form in this context)",
+    "category": "Forms"
+  },
+  {
+    "tag_name": "<legend>",
+    "description": "Caption for the content of its parent <fieldset> element",
+    "category": "Forms"
+  },
+  {
+    "tag_name": "<li>",
+    "description": "List item. Rendered differently depending on the parent element (<menu>, <ol>, <ul>)",
+    "category": "Text content"
+  },
+  {
+    "tag_name": "<link>",
+    "description": "Specify relationships between the current document and an external resource. Used for linking css files, site icons, fonts, etc.",
+    "category": "Document metadata"
+  },
+  {
+    "tag_name": "<main>",
+    "description": "Main content of the document",
+    "category": "Content sectioning"
+  },
+  {
+    "tag_name": "<map>",
+    "description": "Used to define an image map. Image maps allows geometric areas of an image to be associated with hyperlinks",
+    "category": "Image and multimedia"
+  },
+  {
+    "tag_name": "<mark>",
+    "description": "Represents marked or highlighted text",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<math>",
+    "description": "Required toplevel element in MathML",
+    "category": "SVG and MathML"
+  },
+  {
+    "tag_name": "<menu>",
+    "description": "Semantic alternative to <ul> but treated the same by browsers",
+    "category": "Text content"
+  },
+  {
+    "tag_name": "<meta>",
+    "description": "Metadata that cannot be represented by other meta-related elements (base, link, script, style or title)",
+    "category": "Document metadata"
+  },
+  {
+    "tag_name": "<meter>",
+    "description": "Represents a scalar measurement within a known range. Differs from <progress> in that it represents a gauge rather than a progress indicator. <progress> is for completion of a task, while <meter> is for gauges and meters",
+    "category": "Forms"
+  },
+  {
+    "tag_name": "<nav>",
+    "description": "Section of a page whose purpose is to provide navigation links. Menus, ToC, indexes, etc.",
+    "category": "Content sectioning"
+  },
+  {
+    "tag_name": "<noscript>",
+    "description": "Fallback content for users without JavaScript enabled (usually a notice that JavaScript is required). If js is enabled, it will not be rendered at all",
+    "category": "Scripting"
+  },
+  {
+    "tag_name": "<object>",
+    "description": "External resource. <img> is better for images, <audio> is better for audio, <video> is better for video, <iframe> is better for iframes; use <object> for other resources (mainly PDF files)",
+    "category": "Embedded content"
+  },
+  {
+    "tag_name": "<ol>",
+    "description": "Ordered list of items. Typically rendered as numbered list",
+    "category": "Text content"
+  },
+  {
+    "tag_name": "<optgroup>",
+    "description": "Creates a group of options within a <select> element",
+    "category": "Forms"
+  },
+  {
+    "tag_name": "<option>",
+    "description": "Represents an option in a <select>, <optgroup> or <datalist> element",
+    "category": "Forms"
+  },
+  {
+    "tag_name": "<output>",
+    "description": "Container element into which website can inject the results of some user action",
+    "category": "Forms"
+  },
+  {
+    "tag_name": "<p>",
+    "description": "Paragraph of text",
+    "category": "Text content"
+  },
+  {
+    "tag_name": "<picture>",
+    "description": "Contains zero or more <source> elements and one <img> element. It will first try to load the best match from the <source> elements, falling back to the <img> element if none match",
+    "category": "Embedded content"
+  },
+  {
+    "tag_name": "<pre>",
+    "description": "Preformatted text. Typically rendered using a monospaced font. Whitespace is preserved",
+    "category": "Text content"
+  },
+  {
+    "tag_name": "<progress>",
+    "description": "Represents the indicator of a completion of a task, typically displayed as a progress bar",
+    "category": "Forms"
+  },
+  {
+    "tag_name": "<q>",
+    "description": "Inline quotation",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<rp>",
+    "description": "Used to provide fallback content for browsers that do not support ruby annotations",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<rt>",
+    "description": "Specifies the ruby text component of a ruby annotation. Must be contained within a <ruby> element",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<ruby>",
+    "description": "Used to annotate characters with ruby text (e.g. pronunciation guides)",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<s>",
+    "description": "Strikethrough. Represents text that is no longer accurate or relevant",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<samp>",
+    "description": "Sample output from a computer program. Typically rendered in monospace font",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<script>",
+    "description": "For embedding JavaScript code (but also webgl's glsl shared code and json)",
+    "category": "Scripting"
+  },
+  {
+    "tag_name": "<search>",
+    "description": "Form controls for searching or filtering operation",
+    "category": "Content sectioning"
+  },
+  {
+    "tag_name": "<section>",
+    "description": "Generic standalone section of a document. Should always have a heading with very few exceptions",
+    "category": "Content sectioning"
+  },
+  {
+    "tag_name": "<select>",
+    "description": "Defines a dropdown list where users can select an option",
+    "category": "Forms"
+  },
+  {
+    "tag_name": "<slot>",
+    "description": "For defining a slot for content to be inserted into a web component",
+    "category": "Web components"
+  },
+  {
+    "tag_name": "<small>",
+    "description": "Represents a small print text (think legal text, copyright notice, etc.)",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<source>",
+    "description": "Specifies the media resource for the <picture>, <video>, <audio> elements. Used to offer the same content in multiple formats in order to provide compatibility with different browsers and devices. Void element",
+    "category": "Embedded content"
+  },
+  {
+    "tag_name": "<span>",
+    "description": "Generic inline container for phrasing content, which does not inherently represent anything. Like div, but div is block-level element, while span is inline element",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<strong>",
+    "description": "Strong emphasis. Typically rendered using a bold font weight",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<style>",
+    "description": "Style information (inline css basically)",
+    "category": "Document metadata"
+  },
+  {
+    "tag_name": "<sub>",
+    "description": "Subscript",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<summary>",
+    "description": "Represents a summary, caption, or legend for a <details> element. Usually rendered as a heading or label for the details element that users clicks to expand or collapse the details element",
+    "category": "Interactive elements"
+  },
+  {
+    "tag_name": "<sup>",
+    "description": "Superscript",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<svg>",
+    "description": "Outermost element of svg documents but also for embedding svg content within html documents",
+    "category": "SVG and MathML"
+  },
+  {
+    "tag_name": "<table>",
+    "description": "Tabular data. Parent element for all table content",
+    "category": "Table content"
+  },
+  {
+    "tag_name": "<tbody>",
+    "description": "Table body. Encapsulates the main content of the table",
+    "category": "Table content"
+  },
+  {
+    "tag_name": "<td>",
+    "description": "Table cell",
+    "category": "Table content"
+  },
+  {
+    "tag_name": "<template>",
+    "description": "For defining a template for reuse",
+    "category": "Web components"
+  },
+  {
+    "tag_name": "<textarea>",
+    "description": "Multi-line plain-text editing control",
+    "category": "Forms"
+  },
+  {
+    "tag_name": "<tfoot>",
+    "description": "Table footer",
+    "category": "Table content"
+  },
+  {
+    "tag_name": "<th>",
+    "description": "Header cell",
+    "category": "Table content"
+  },
+  {
+    "tag_name": "<thead>",
+    "description": "Table header",
+    "category": "Table content"
+  },
+  {
+    "tag_name": "<time>",
+    "description": "Represents a specific period in time. Can be used to represent a date, a time, or a date and time",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<title>",
+    "description": "Document title. Text only. If there are html tags present in the title element, they are treated as text",
+    "category": "Document metadata"
+  },
+  {
+    "tag_name": "<tr>",
+    "description": "Table row",
+    "category": "Table content"
+  },
+  {
+    "tag_name": "<track>",
+    "description": "Used as a child of the media elements (<video>, <audio>) to provide captions, subtitles, or other timed text tracks",
+    "category": "Image and multimedia"
+  },
+  {
+    "tag_name": "<u>",
+    "description": "Represents text that should be stylistically different from normal text, typically for non-textual annotations. Common uses include proper name marks in Chinese text, spelling errors. When possible, use CSS text-decoration for purely visual underlining",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<ul>",
+    "description": "Unordered list of items. Typically rendered as bulleted list",
+    "category": "Text content"
+  },
+  {
+    "tag_name": "<var>",
+    "description": "Variable or placeholder text in a mathematical expression or computer program",
+    "category": "Inline text semantics"
+  },
+  {
+    "tag_name": "<video>",
+    "description": "Embeds video into document",
+    "category": "Image and multimedia"
+  },
+  {
+    "tag_name": "<wbr>",
+    "description": "Word break opportunity. Used to indicate where a line break is allowed but not required (in case that the rule of the parent element is not followed)",
+    "category": "Inline text semantics"
+  }
+]
