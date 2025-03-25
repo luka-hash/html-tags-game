@@ -50,7 +50,7 @@ function App() {
     <div className="p-2">
       <h1>html-tags-game</h1>
       <div
-        className='flex flex-col gap-4 pb-4 md:flex-row md:items-center md:justify-start md:pb-0'
+        className='mb-2 flex flex-col gap-4 pb-4 md:flex-row md:items-center md:justify-start md:pb-0'
       >
       <input
         className='mt-1 p-4 border-b-2'
@@ -75,13 +75,13 @@ function App() {
       </a>
       </span>
       </div>
-      <div className='border-t-1'>
+      <div>
       {getCategories(data).map((c, index)=>{
         return (
         <div
           key={index}
-          className='border-1 m-2 p-2'>
-          <div className='flex flex-row justify-between'>
+          className='border-1 m-2 p-2 pb-0'>
+          <div className='flex flex-row justify-between pb-2'>
             <h2>{c.category}</h2>
             <span className='text-sm text-gray-600'>
               {foundTags.filter(tag => tag.category === c.category).length === c.count ? (
@@ -101,7 +101,7 @@ function App() {
               return (
                 <div
                   key={index}
-                  className='p-2 border-t'
+                  className='p-2 border-t first:border-t-2 last:pb-2'
                 >
                   <span className='font-extrabold'>
                     {tag.tag_name}
