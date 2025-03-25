@@ -2,6 +2,23 @@ import { useState } from 'react';
 import './App.css';
 import data from './assets/data.json' with { type: "json" };
 
+interface Tag {
+  tag_name: string;
+  description: string;
+  category: string;
+}
+
+function getCategories(data: Tag[]) {
+  const categoryCount = new Map<string, number>();
+  data.forEach(tag => {
+    const category = tag.category;
+    categoryCount.set(category, (categoryCount.get(category) || 0) + 1);
+  });
+  return Array.from(categoryCount).map(([category, count]) => ({
+    category,
+    count
+  }));
+}
 
 function App() {
   const [foundTags, setFoundTags] = useState<typeof data>([]);
@@ -20,6 +37,9 @@ function App() {
       if (foundTags.includes(matchingTag)) {
         // ...
       } else {
+        if (foundTags.length === data.length) {
+          alert('You found all tags!')
+        }
         setFoundTags(prev => [...prev, matchingTag])
         input.value = ''
       }
@@ -29,36 +49,62 @@ function App() {
   return (
     <div className="p-2">
       <h1>html-tags-game</h1>
+      <div
+        className='flex flex-col gap-4 pb-4 md:flex-row md:items-center md:justify-start md:pb-0'
+      >
       <input
         className='mt-1 p-4 border-b-2'
         type="text"
         placeholder="Enter tag name"
         onKeyDown={handleGuess}
       />
-      <span className='ml-10 text-sm text-gray-600'>
+      <span className='ml-5 mr-5 text-sm text-gray-600'>
         Found {foundTags.length}/{data.length} tags
       </span>
+      <button className='ml-5 mr-5 p-2 border-2 rounded-md hover:bg-gray-200 w-fit' onClick={() => setFoundTags([])}>
+        Reset
+      </button>
       <span>
-        <a className="ml-10" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">
+        <a className="ml-5 mr-5 external-link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">
           Give up
         </a>
       </span>
-      <div className="mt-1 flex flex-col-reverse border-b">
-        {foundTags.map((tag, index) => {
-          return (
-            <div
-              key={index}
-              className='p-2 border-t'
-            >
-              <span className='font-extrabold'>
-                {tag.tag_name}
-              </span>
-              <p>
-                {tag.description}
-              </p>
-            </div>
-          )
-        })}
+      <span>
+        <a className="ml-5 mr-5 external-link" href="https://github.com/luka-hash/html-tags-game">
+          Source
+      </a>
+      </span>
+      </div>
+      <div className='border-t-1'>
+      {getCategories(data).map((c, index)=>{
+        return (
+        <div
+          key={index}
+          className='border-1 m-2 p-2'>
+          <div className='flex flex-row justify-between'>
+            <h2>{c.category}</h2>
+              <span className='text-sm text-gray-600'> Found {foundTags.filter(tag => tag.category === c.category).length}/{c.count} tag{c.count > 1 ? 's' : ''} in this category</span>
+          </div>
+          <div>
+            {foundTags.filter(tag => tag.category === c.category).map((tag, index) => {
+              return (
+                <div
+                  key={index}
+                  className='p-2 border-t'
+                >
+                  <span className='font-extrabold'>
+                    {tag.tag_name}
+                  </span>
+                  <p>
+                    {tag.description}
+                  </p>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+        )
+      })}
       </div>
     </div>
   )
