@@ -3,14 +3,12 @@
     line-height: 1.5;
     font-weight: 400;
 
+    color-scheme: light dark;
+
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
-    --text-color: rgba(0, 0, 0, 1);
-    --bg-color: rgba(255, 255, 255, 1);
-    --border-color: rgba(180,180,180,1);
 }
 
 body {
@@ -22,4 +20,20 @@ body {
 
 a {
     text-decoration: underline;
+}
+
+@media (prefers-color-scheme: light) {
+    :root{
+        --text-color: rgba(0, 0, 0, 1);
+        --bg-color: rgba(255, 255, 255, 1);
+        --border-color: rgba(180, 180, 180, 1);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: rgba(255, 255, 255, 1);
+        --bg-color: rgba(0, 0, 0, 1);
+        --border-color: rgba(120, 120, 120, 1);
+    }
 }
