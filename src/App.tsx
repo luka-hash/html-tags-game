@@ -38,7 +38,7 @@ function App() {
         // ...
       } else {
         if (foundTags.length === data.length) {
-          alert('You found all tags!')
+          alert("You found all tags!")
         }
         setFoundTags(prev => [...prev, matchingTag])
         input.value = ''
@@ -83,7 +83,18 @@ function App() {
           className='border-1 m-2 p-2'>
           <div className='flex flex-row justify-between'>
             <h2>{c.category}</h2>
-              <span className='text-sm text-gray-600'> Found {foundTags.filter(tag => tag.category === c.category).length}/{c.count} tag{c.count > 1 ? 's' : ''} in this category</span>
+            <span className='text-sm text-gray-600'>
+              {foundTags.filter(tag => tag.category === c.category).length === c.count ? (
+                <span className='before:content-["🎉_"] before:mr-1'>
+                  Found all tags in this category
+                </span>
+              ) : (
+                <>
+                  Found {foundTags.filter(tag => tag.category === c.category).length}/
+                  {c.count} tag{c.count > 1 ? 's' : ''} in this category
+                </>
+              )}
+            </span>
           </div>
           <div>
             {foundTags.filter(tag => tag.category === c.category).map((tag, index) => {
