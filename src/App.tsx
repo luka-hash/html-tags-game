@@ -61,7 +61,7 @@ function App() {
       <span className='ml-5 mr-5 text-sm text-gray-600'>
         Found {foundTags.length}/{data.length} tags
       </span>
-      <button className='ml-5 mr-5 p-2 border-2 rounded-md hover:bg-gray-200 w-fit' onClick={() => setFoundTags([])}>
+      <button className='ml-5 mr-5 p-2 border-2 rounded-md hover:bg-gray-200 dark:hover:text-black w-fit' onClick={() => setFoundTags([])}>
         Reset
       </button>
       <span>
@@ -117,6 +117,15 @@ function App() {
         )
       })}
       </div>
+      <footer className='flex flex-col justify-center items-center'>
+        <div>
+          Made with love
+        </div>
+        <div>
+          Copyright © 2025-{new Date().getFullYear()} Luka Ivanović
+        </div>
+
+      </footer>
     </div>
   )
 }
