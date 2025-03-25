@@ -14,4 +14,8 @@
         background-size: contain;
         display: inline-block;
     }
+
+    .external-link:hover {
+        font-weight: bolder;
+    }
 }

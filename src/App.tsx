@@ -65,12 +65,12 @@ function App() {
         Reset
       </button>
       <span>
-        <a className="ml-5 mr-5 external-link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">
+        <a target="_blank" className="ml-5 mr-5 external-link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">
           Give up
         </a>
       </span>
       <span>
-        <a className="ml-5 mr-5 external-link" href="https://github.com/luka-hash/html-tags-game">
+        <a target="_blank" className="ml-5 mr-5 external-link" href="https://github.com/luka-hash/html-tags-game">
           Source
       </a>
       </span>
