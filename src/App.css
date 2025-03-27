@@ -9,7 +9,11 @@
         display: inline-block;
     }
 
+    .external-link {
+        transition: text-shadow 0.1s ease-in;
+    }
+
     .external-link:hover {
-        font-weight: bolder;
+        text-shadow: 0 0 4px var(--text-color);
     }
 }
