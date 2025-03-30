@@ -1,19 +1,8 @@
 @import "tailwindcss";
 
 @layer components {
-
-    .external-link[href^="http"]::after,
-    .external-link[href^="https"]::after {
-        content: "_↗";
-        margin-left: 6px;
-        display: inline-block;
-    }
-
-    .external-link {
-        transition: text-shadow 0.1s ease-in;
-    }
-
-    .external-link:hover {
-        text-shadow: 0 0 4px var(--text-color);
-    }
+	a[href^="https"]:not([href^="https://luka.ljudi.org"])::after {
+		content: "↗";
+		margin-left: 4px;
+	}
 }

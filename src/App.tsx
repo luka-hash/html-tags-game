@@ -61,16 +61,16 @@ function App() {
       <span className='ml-5 mr-5 text-sm text-gray-600'>
         Found {foundTags.length}/{data.length} tags
       </span>
-      <button className='ml-5 mr-5 p-2 border-2 rounded-md hover:bg-gray-200 dark:hover:text-black w-fit' onClick={() => setFoundTags([])}>
+      <button className='ml-5 mr-5 p-2 border-2 rounded-md hover:bg-gray-100 dark:hover:text-black w-fit' onClick={() => setFoundTags([])}>
         Reset
       </button>
       <span>
-        <a target="_blank" className="ml-5 mr-5 external-link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">
+        <a target="_blank" className="ml-5 mr-5 hover:bg-gray-100 dark:hover:text-black" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">
           Give up
         </a>
       </span>
       <span>
-        <a target="_blank" className="ml-5 mr-5 external-link" href="https://github.com/luka-hash/html-tags-game">
+        <a target="_blank" className="ml-5 mr-5 hover:bg-gray-100 dark:hover:text-black" href="https://github.com/luka-hash/html-tags-game">
           Source
       </a>
       </span>
@@ -119,7 +119,7 @@ function App() {
       </div>
       <footer className='flex flex-col justify-center items-center'>
         <div>
-          Made with love
+          Made with love.
         </div>
         <div>
           Copyright © 2025-{new Date().getFullYear()} Luka Ivanović
